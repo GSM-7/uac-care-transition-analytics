@@ -11,7 +11,22 @@ from plotly.subplots import make_subplots
 import uac_metrics as u
 
 st.set_page_config(page_title="UAC Care Transition Analytics", page_icon="🧭", layout="wide")
-DATA = Path(__file__).parent / "data" / "HHS_Unaccompanied_Alien_Children_Program.csv"
+BASE = Path(__file__).parent
+
+
+def find_csv():
+    """Locate the dataset wherever it was uploaded (data/ folder or repo root)."""
+    preferred = BASE / "data" / "HHS_Unaccompanied_Alien_Children_Program.csv"
+    if preferred.exists():
+        return preferred
+    for pattern in ("data/*.csv", "*.csv", "**/*.csv"):
+        hits = sorted(BASE.glob(pattern))
+        if hits:
+            return hits[0]
+    return None
+
+
+DATA = find_csv()
 
 
 @st.cache_data
@@ -22,6 +37,10 @@ def get_data(src):
 # ------------------------------------------------------------------ sidebar
 st.sidebar.title("Controls")
 upload = st.sidebar.file_uploader("Optional: upload a newer HHS CSV", type="csv")
+if upload is None and DATA is None:
+    st.error("Dataset not found in the repository. Add `HHS_Unaccompanied_Alien_Children_Program.csv` "
+             "to the repo (in a `data/` folder or the root), or upload the CSV using the sidebar.")
+    st.stop()
 raw = get_data(upload if upload else DATA)
 
 lo, hi = raw["date"].min().date(), raw["date"].max().date()
