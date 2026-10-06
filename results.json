@@ -1,0 +1,265 @@
+{
+  "kpi": {
+    "reports": 720.0,
+    "start": "2023-01-12",
+    "end": "2025-12-21",
+    "transfer_efficiency": 0.7502753571544267,
+    "discharge_effectiveness": 0.02860898811627,
+    "throughput_cbp_stage": 1.3757815168480925,
+    "throughput_hhs_stage": 1.3477078183525653,
+    "throughput_end_to_end": 1.8541515066011256,
+    "backlog_rate": -44.73888888888889,
+    "cbp_backlog_rate": -35.144444444444446,
+    "stability": 69.83959386393228,
+    "total_apprehended": 67337.0,
+    "total_transferred": 92641.0,
+    "total_discharged": 124853.0
+  },
+  "by_year": {
+    "2023": {
+      "reports": 230.0,
+      "start": "2023-01-12",
+      "end": "2023-12-28",
+      "transfer_efficiency": 0.7834649084757526,
+      "discharge_effectiveness": 0.03331192795724825,
+      "throughput_cbp_stage": 1.335156712004731,
+      "throughput_hhs_stage": 1.8337947071199203,
+      "throughput_end_to_end": 2.448403311649911,
+      "backlog_rate": -130.95652173913044,
+      "cbp_backlog_rate": -39.426086956521736,
+      "stability": 77.73070915827076,
+      "total_apprehended": 27056.0,
+      "total_transferred": 36124.0,
+      "total_discharged": 66244.0
+    },
+    "2024": {
+      "reports": 251.0,
+      "start": "2024-01-01",
+      "end": "2024-12-30",
+      "transfer_efficiency": 0.7561112469965325,
+      "discharge_effectiveness": 0.029239448506971726,
+      "throughput_cbp_stage": 1.4139805198299522,
+      "throughput_hhs_stage": 0.9835781701933323,
+      "throughput_end_to_end": 1.390760372383361,
+      "backlog_rate": 3.4382470119521913,
+      "cbp_backlog_rate": -61.298804780876495,
+      "stability": 77.11890038881597,
+      "total_apprehended": 37166.0,
+      "total_transferred": 52552.0,
+      "total_discharged": 51689.0
+    },
+    "2025": {
+      "reports": 239.0,
+      "start": "2025-01-01",
+      "end": "2025-12-21",
+      "transfer_efficiency": 0.5041322314049587,
+      "discharge_effectiveness": 0.011386485623739177,
+      "throughput_cbp_stage": 1.2728731942215088,
+      "throughput_hhs_stage": 1.7452711223203026,
+      "throughput_end_to_end": 2.221508828250401,
+      "backlog_rate": -12.364016736401673,
+      "cbp_backlog_rate": -3.5564853556485354,
+      "stability": 54.89799378947788,
+      "total_apprehended": 3115.0,
+      "total_transferred": 3965.0,
+      "total_discharged": 6920.0
+    }
+  },
+  "reconciliation": {
+    "n": 558,
+    "corr": 0.2166105976395256,
+    "mean_residual": 67.71146953405018,
+    "median_residual": 9.0,
+    "share_positive": 0.7616487455197133,
+    "cum_residual": 37783.0
+  },
+  "imbalance": [
+    {
+      "start": "2024-02-06",
+      "end": "2024-03-14",
+      "reports": "27",
+      "avg_net_flow": "51.16931216931217",
+      "hhs_census_start": "8045",
+      "hhs_census_end": "8695",
+      "census_change": "650"
+    },
+    {
+      "start": "2024-04-21",
+      "end": "2024-06-13",
+      "reports": "39",
+      "avg_net_flow": "46.3992673992674",
+      "hhs_census_start": "6745",
+      "hhs_census_end": "7544",
+      "census_change": "799"
+    },
+    {
+      "start": "2024-08-20",
+      "end": "2024-09-13",
+      "reports": "16",
+      "avg_net_flow": "43.098214285714285",
+      "hhs_census_start": "5995",
+      "hhs_census_end": "6326",
+      "census_change": "331"
+    },
+    {
+      "start": "2024-09-30",
+      "end": "2024-12-26",
+      "reports": "61",
+      "avg_net_flow": "31.85245901639344",
+      "hhs_census_start": "5967",
+      "hhs_census_end": "6707",
+      "census_change": "740"
+    },
+    {
+      "start": "2025-03-23",
+      "end": "2025-04-21",
+      "reports": "23",
+      "avg_net_flow": "3.7329192546583854",
+      "hhs_census_start": "2136",
+      "hhs_census_end": "2308",
+      "census_change": "172"
+    },
+    {
+      "start": "2025-05-04",
+      "end": "2025-06-01",
+      "reports": "18",
+      "avg_net_flow": "2.595238095238095",
+      "hhs_census_start": "2335",
+      "hhs_census_end": "2528",
+      "census_change": "193"
+    },
+    {
+      "start": "2025-10-14",
+      "end": "2025-11-02",
+      "reports": "14",
+      "avg_net_flow": "2.26530612244898",
+      "hhs_census_start": "2235",
+      "hhs_census_end": "2277",
+      "census_change": "42"
+    },
+    {
+      "start": "2025-11-13",
+      "end": "2025-12-04",
+      "reports": "15",
+      "avg_net_flow": "1.6476190476190478",
+      "hhs_census_start": "2317",
+      "hhs_census_end": "2418",
+      "census_change": "101"
+    }
+  ],
+  "stagnation": [
+    {
+      "start": "2025-03-16",
+      "end": "2025-07-01",
+      "reports": "71",
+      "avg_discharge_eff": "0.004510554506880999",
+      "avg_hhs_census": "2338.9859154929577"
+    },
+    {
+      "start": "2025-07-21",
+      "end": "2025-12-21",
+      "reports": "106",
+      "avg_discharge_eff": "0.005196195936602681",
+      "avg_hhs_census": "2192.1132075471696"
+    }
+  ],
+  "drops": [
+    {
+      "date": "2025-02-25",
+      "worst_drop_pct": "-68.55754537224516",
+      "discharge_eff_before": "0.028900884940259615",
+      "discharge_eff_after": "0.00908714763436076",
+      "hhs_census": "2413"
+    },
+    {
+      "date": "2025-03-23",
+      "worst_drop_pct": "-74.70763117018808",
+      "discharge_eff_before": "0.012007911140145381",
+      "discharge_eff_after": "0.003037085174321643",
+      "hhs_census": "2136"
+    },
+    {
+      "date": "2025-10-21",
+      "worst_drop_pct": "-37.35425058784865",
+      "discharge_eff_before": "0.006225193361969536",
+      "discharge_eff_after": "0.003899819033961316",
+      "hhs_census": "2251"
+    }
+  ],
+  "peak": {
+    "date": "2023-12-20",
+    "hhs": 11516.0
+  },
+  "trough": {
+    "date": "2025-08-21",
+    "hhs": 1972.0
+  },
+  "ter_gt1_share": 0.11944444444444445,
+  "weekday": [
+    {
+      "weekday": "Sunday",
+      "reports": 130,
+      "transferred": 130.0615,
+      "discharged": 206.1385,
+      "apprehended": 88.2385,
+      "transfer_eff": 0.7678,
+      "discharge_eff": 0.0351
+    },
+    {
+      "weekday": "Monday",
+      "reports": 145,
+      "transferred": 123.731,
+      "discharged": 157.5586,
+      "apprehended": 93.7793,
+      "transfer_eff": 0.7367,
+      "discharge_eff": 0.026
+    },
+    {
+      "weekday": "Tuesday",
+      "reports": 149,
+      "transferred": 124.8591,
+      "discharged": 136.1141,
+      "apprehended": 97.1141,
+      "transfer_eff": 0.7194,
+      "discharge_eff": 0.0224
+    },
+    {
+      "weekday": "Wednesday",
+      "reports": 147,
+      "transferred": 131.6735,
+      "discharged": 166.0136,
+      "apprehended": 93.8027,
+      "transfer_eff": 0.7487,
+      "discharge_eff": 0.027
+    },
+    {
+      "weekday": "Thursday",
+      "reports": 147,
+      "transferred": 133.415,
+      "discharged": 205.6871,
+      "apprehended": 94.6939,
+      "transfer_eff": 0.7792,
+      "discharge_eff": 0.0336
+    }
+  ],
+  "gap": [
+    {
+      "type": "After 3+ day gap",
+      "reports": 151,
+      "transferred": 129.6026,
+      "discharged": 201.0662,
+      "transfer_eff": 0.7706,
+      "discharge_eff": 0.0335
+    },
+    {
+      "type": "Consecutive day",
+      "reports": 568,
+      "transferred": 128.5863,
+      "discharged": 165.5915,
+      "transfer_eff": 0.7451,
+      "discharge_eff": 0.0272
+    }
+  ],
+  "zero_discharge_reports": 1,
+  "corr_ter_de": 0.5646775932002888
+}
