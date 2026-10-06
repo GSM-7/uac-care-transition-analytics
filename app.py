@@ -194,7 +194,10 @@ with tabs[2]:
         st.dataframe(imb.assign(start=imb.start.dt.date, end=imb.end.dt.date).round(1), width="stretch", hide_index=True)
     st.subheader("Prolonged low-discharge (stagnation) periods")
     sp = u.stagnation_periods(d)
-    st.dataframe(sp.assign(start=sp.start.dt.date, end=sp.end.dt.date).round(4), width="stretch", hide_index=True) if len(sp) else st.write("None in this range.")
+    if len(sp):
+        st.dataframe(sp.assign(start=sp.start.dt.date, end=sp.end.dt.date).round(4), width="stretch", hide_index=True)
+    else:
+        st.write("None in this range.")
 
 # ------------------------------------------------------------------ tab 4: outcomes
 with tabs[3]:
@@ -212,7 +215,10 @@ with tabs[3]:
     dr_pct = st.slider("Sudden-drop sensitivity: min fall in 7-report discharge effectiveness (%)", 20, 80, 35)
     sd = u.sudden_drops(d, 7, dr_pct)
     st.subheader("Sudden drops in reunification success")
-    st.dataframe(sd.assign(date=sd.date.dt.date).round(4), width="stretch", hide_index=True) if len(sd) else st.write("No drops at this sensitivity.")
+    if len(sd):
+        st.dataframe(sd.assign(date=sd.date.dt.date).round(4), width="stretch", hide_index=True)
+    else:
+        st.write("No drops at this sensitivity.")
     st.subheader("Monthly summary")
     st.dataframe(mt.round(3), width="stretch")
     st.download_button("Download monthly summary (CSV)", mt.round(4).to_csv().encode(), "monthly_summary.csv")
